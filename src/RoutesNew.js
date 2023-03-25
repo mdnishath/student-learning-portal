@@ -14,6 +14,7 @@ import StudentDashboard from "./student/pages/StudentDashboard";
 // import PublicRoute from "./shared/components/PublicRout";
 // const isLoggedIn = true;
 import CoursePlayer from "./student/pages/CoursePlayer";
+import Leaderboard from "./student/pages/Leaderboard";
 
 const RoutesNew = () => {
   return (
@@ -26,6 +27,7 @@ const RoutesNew = () => {
 
         <Route path="/" element={<StudentLogin />} />
         <Route path="/student/course-player" element={<CoursePlayer />} />
+        <Route path="/student/leaderboard" element={<Leaderboard />} />
         <Route path="/student/signup" element={<StudentSignup />} />
         <Route
           path="/student/dashboard"
