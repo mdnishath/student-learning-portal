@@ -9,10 +9,7 @@ const AdminDashboard = () => {
         <div className="mx-auto max-w-7xl px-5 lg:px-0">
           <div className="px-3 md:lg:xl:px-40  py-20 bg-opacity-10">
             <div className="grid grid-cols-1 md:grid-cols-2  gap-6 p-8">
-              <Link
-                to="/admin/dashboard/videos"
-                className="dashboard-item-card"
-              >
+              <Link to="/dashboard/videos" className="dashboard-item-card">
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
@@ -29,10 +26,7 @@ const AdminDashboard = () => {
                 <p className="text-slate-200 mt-3 ">Videos</p>
               </Link>
 
-              <Link
-                to="/admin/dashboard/assignment"
-                className="dashboard-item-card"
-              >
+              <Link to="/dashboard/assignment" className="dashboard-item-card">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -51,10 +45,7 @@ const AdminDashboard = () => {
                 <p className="text-slate-200 mt-3">Assignment</p>
               </Link>
 
-              <Link
-                to="/admin/dashboard/quizzes"
-                className="dashboard-item-card"
-              >
+              <Link to="/dashboard/quizzes" className="dashboard-item-card">
                 <svg
                   fill="none"
                   viewBox="0 0 24 24"
@@ -72,7 +63,7 @@ const AdminDashboard = () => {
               </Link>
 
               <Link
-                to="/admin/dashboard/assignmentMark"
+                to="/dashboard/assignmentMark"
                 className="dashboard-item-card"
               >
                 <svg

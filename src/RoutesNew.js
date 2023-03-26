@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AdminLogin from "./admin/pages/AdminLogin";
-import AdminSignup from "./admin/pages/AdminSignup";
-import AdminDashboard from "./admin/pages/AdminDashboard";
+import AdminLogin from "./Dashboard/pages/AdminLogin";
+import AdminSignup from "./Dashboard/pages/AdminSignup";
+import AdminDashboard from "./Dashboard/pages/AdminDashboard";
 
-import StudentLogin from "./student/pages/StudentLogin";
-import StudentSignup from "./student/pages/StudentSignup";
-import StudentDashboard from "./student/pages/StudentDashboard";
+import StudentLogin from "./Student/pages/StudentLogin";
+import StudentSignup from "./Student/pages/StudentSignup";
+import StudentDashboard from "./Student/pages/StudentDashboard";
 
 // import Header from "./shared/components/Header";
 // import Footer from "./shared/components/Footer";
@@ -14,31 +14,28 @@ import StudentDashboard from "./student/pages/StudentDashboard";
 // import PublicRoute from "./shared/components/PublicRout";
 // const isLoggedIn = true;
 //Student
-import CoursePlayer from "./student/pages/CoursePlayer";
-import Leaderboard from "./student/pages/Leaderboard";
-import Quiz from "./student/pages/Quiz";
+import CoursePlayer from "./Student/pages/CoursePlayer";
+import Leaderboard from "./Student/pages/Leaderboard";
+import Quiz from "./Student/pages/Quiz";
 
 //Admin
-import Videos from "./admin/pages/Videos";
-import Assignment from "./admin/pages/Assignment";
-import Quizzes from "./admin/pages/Quizzes";
-import AssignmentMark from "./admin/pages/AssignmentMark";
+import Videos from "./Dashboard/pages/Videos";
+import Assignment from "./Dashboard/pages/Assignment";
+import Quizzes from "./Dashboard/pages/Quizzes";
+import AssignmentMark from "./Dashboard/pages/AssignmentMark";
 
 const RoutesNew = () => {
   return (
     <Router>
       {/* Admin Routes */}
       <Routes>
-        <Route path="/admin/login" element={<AdminLogin />} />
-        <Route path="/admin/signup" element={<AdminSignup />} />
-        <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/dashboard/videos" element={<Videos />} />
-        <Route path="/admin/dashboard/assignment" element={<Assignment />} />
-        <Route path="/admin/dashboard/quizzes" element={<Quizzes />} />
-        <Route
-          path="/admin/dashboard/assignmentMark"
-          element={<AssignmentMark />}
-        />
+        <Route path="/dashboard/login" element={<AdminLogin />} />
+        <Route path="/dashboard/signup" element={<AdminSignup />} />
+        <Route path="/dashboard" element={<AdminDashboard />} />
+        <Route path="/dashboard/videos" element={<Videos />} />
+        <Route path="/dashboard/assignment" element={<Assignment />} />
+        <Route path="/dashboard/quizzes" element={<Quizzes />} />
+        <Route path="/dashboard/assignmentMark" element={<AssignmentMark />} />
 
         {/* Student Routs */}
         <Route path="/" element={<StudentLogin />} />
